@@ -1,156 +1,241 @@
-<!doctype html>
-<!--[if lt IE 7 ]><html itemscope itemtype="http://schema.org/Organization" id="ie6" class="ie ie-old" lang="en-US"><![endif]-->
-<!--[if IE 7 ]>   <html itemscope itemtype="http://schema.org/Organization" id="ie7" class="ie ie-old" lang="en-US"><![endif]-->
-<!--[if IE 8 ]>   <html itemscope itemtype="http://schema.org/Organization" id="ie8" class="ie ie-old" lang="en-US"><![endif]-->
-<!--[if IE 9 ]>   <html itemscope itemtype="http://schema.org/Organization" id="ie9" class="ie" lang="en-US"><![endif]-->
-<!--[if gt IE 9]><!--><html itemscope itemtype="http://schema.org/Organization" lang="en-US"><!--<![endif]-->
+
+<!DOCTYPE html>
+<html>
 <head>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+<title>Clear Mind Reset</title>
+<style>
+   
+body {
+ font-family: 'Open Sans', sans-serif;
+ font-weight: 300;
+ color: Linen;
+ text-align: center;
+ background-color: #2a2a2a;
+}
 
-    <!-- Meta -->
-    <meta charset="utf-8">
-    <!--
-      /$$$$$$                        /$$               /$$
-     /$$__  $$                      | $$              | $$
-    | $$  \__/  /$$$$$$$  /$$$$$$  /$$$$$$    /$$$$$$$| $$$$$$$
-    |  $$$$$$  /$$_____/ /$$__  $$|_  $$_/   /$$_____/| $$__  $$
-     \____  $$| $$      | $$  \ $$  | $$    | $$      | $$  \ $$
-     /$$  \ $$| $$      | $$  | $$  | $$ /$$| $$      | $$  | $$
-    |  $$$$$$/|  $$$$$$$|  $$$$$$/  |  $$$$/|  $$$$$$$| $$  | $$
-     \______/  \_______/ \______/    \___/   \_______/|__/  |__/
+h1, h2, h3, h4, h5, h6 {
+ font-weight: 300;
+ text-transform: uppercase;
+ text-align: center;
+}
+
+#textbox { 
+  width: 33%; 
+  max-width: 250px;
+  margin: auto;
+}
+
+#thirdcolumn { 
+  width: 30%; 
+  max-width: 350px;
+  margin: auto;
+  display: inline-block;
+  text-align: left;
+  vertical-align: top;
+}
+
+#centercolumn { 
+  width: 50%; 
+  max-width: 600px;
+  margin: auto;
+  display: inline-block;
+  text-align: left;
+  vertical-align: top;
+}
+
+#hobbiescolumn { 
+  width: 25%; 
+  max-width: 300px;
+  margin: auto;
+  display: inline-block;
+  text-align: left;
+  vertical-align: top;
+}
+
+#resourcescolumn { 
+  width: 50%; 
+  margin: auto;
+  display: inline-block;
+  text-align: left;
+  vertical-align: top;
+}
 
 
+.alignleft {
+    float: left;
+}
+.alignright {
+    float: right;
+}
 
-        /$$$$$           /$$                 /$$ /$$
-       |__  $$          | $$                | $$| $$
-          | $$  /$$$$$$ | $$   /$$ /$$   /$$| $$| $$
-          | $$ /$$__  $$| $$  /$$/| $$  | $$| $$| $$
-     /$$  | $$| $$$$$$$$| $$$$$$/ | $$  | $$| $$| $$
-    | $$  | $$| $$_____/| $$_  $$ | $$  | $$| $$| $$
-    |  $$$$$$/|  $$$$$$$| $$ \  $$|  $$$$$$$| $$| $$
-     \______/  \_______/|__/  \__/ \____  $$|__/|__/
-                                   /$$  | $$
-                                  |  $$$$$$/
-                                   \______/
-    -->
-    <title>Home ♥ PageOne Jekyll Bootstrap</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-    <meta content="yes" name="apple-mobile-web-app-capable">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-
-    <!-- RSS -->
-    <link rel="alternate" type="application/rss+xml" title="PageOne Jekyll Bootstrap ♥ Jekyll Bootstrap Expirement" href="/feed.xml">
-    <link rel="alternate" type="application/atom+xml" title="PageOne Jekyll Bootstrap ♥ Jekyll Bootstrap Expirement" href="/atom.xml">
-
-    <!-- Favicons -->
-    <link rel="shortcut icon" sizes="16x16 24x24 32x32 48x48 64x64 96x96" href="/favicon.ico">
-    <link rel="apple-touch-icon" sizes="57x57" href="/img/favicons/favicon-57.png">
-    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/img/favicons/favicon-57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/img/favicons/favicon-60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/img/favicons/favicon-72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/img/favicons/favicon-76.png">
-    <link rel="apple-touch-icon" sizes="96x96" href="/img/favicons/favicon-96.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/img/favicons/favicon-114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/img/favicons/favicon-120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/img/favicons/favicon-144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/img/favicons/favicon-152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicons/favicon-180.png">
-    <link rel="apple-touch-icon" sizes="192x192" href="/img/favicons/favicon-192.png">
-    <meta name="application-name" content="PageOne Jekyll Bootstrap ♥ Jekyll Bootstrap Expirement">
-    <meta name="msapplication-TileImage" content="/img/favicons/favicon-144.png">
-    <meta name="msapplication-TileColor" content="#ffffff">
-
-    <!-- Fonts -->
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto+Condensed:300,300italic,400,400italic,700,700italic|Oswald:300,400,700">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-
-    <!-- Styles -->
-    <link rel="stylesheet" href="/css/style.css">
-    <!--[if lt IE 9]>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
-        <script src="/js/respond.min.js"></script>
-    <![endif]-->
-
+</style>
 </head>
-<body class="">
+<body>
 
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="/"><i class="fa fa-heart"></i> PageOne Jekyll Bootstrap</a>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    
-                        <li>
-                            <a href="/">Home</a>
-                        </li>
-                    
-                        <li>
-                            <a href="/blog">Blog</a>
-                        </li>
-                    
-                        <li>
-                            <a href="/about">About</a>
-                        </li>
-                    
-                </ul>
-            </div>
-        </div>
-    </nav>
+<p>Soul</p>
+<svg height="130" width="150">     
+  <polygon points="75,0 0,130 150,130" style="fill:blanchedalmond;stroke:black;stroke-width:1" />
+  Sorry, your browser does not support inline SVG.
+</svg>
+<div id="textbox">
+  <p class="alignleft">Body</p>
+  <p class="alignright">Mind</p>
+</div>
 
 
+<div id="thirdcolumn">
+    <h3>Body</h3>
+    <ul>
+        <li>Get enough sleep.</li>
+        <li>Move your body throughout the day.</li>
+        <li>Eat well - a healthy assortment of foods. Not too much, mostly plants, and no refined sugars.</li>
+        <li>Moderate alcohol consumption.</li>
+		<li>Resistance training to build muscle.</li>
+		<li>Cardio for heart and lungs.</li>
+    </ul>
+</div>
+
+<div id="thirdcolumn">
+    <h3>Mind</h3>
+    <ul>
+        <li>Engage in mentally challenging tasks.</li>
+        <li>Read industry and domain-specific news.</li>
+    </ul>
+</div>
+
+<div id="thirdcolumn">
+    <h3>Soul</h3>
+    <ul>
+        <li>Interact socially.</li>
+		<li>Reflect on what you are grateful for.</li>
+		<li>Accomplish a few day-to-day todo items each day.</li>
+        <li>Enjoy entertainment.</li>
+    </ul>
+</div>
+
+<hr>
+    <h3>Hobbies</h3>
+
+	<div id="hobbiescolumn">
+		<h3>Fitness</h3>
+		<ul>
+			<li>Body-weight workout</li>
+			<li>Weight training</li>
+			<li>Walking, Hiking, Running</li>
+		</ul>
+	</div>
+
+	<div id="hobbiescolumn">
+		<h3>Creative</h3>
+		<ul>
+			<li>VFX and game programming</li>
+			<li>Cooking</li>
+			<li>Photography</li>
+			<li>Woodworking</li>
+		</ul>
+	</div>
+
+	<div id="hobbiescolumn">
+		<h3>Knowledge</h3>
+		<ul>
+			<li>Programming projects</li>
+			<li>Reading fiction and non-fiction</li>
+		</ul>
+	</div>
+
+	<div id="hobbiescolumn">
+		<h3>Finance</h3>
+		<ul>
+			<li>Investing</li>
+			<li>Analysis programming</li>
+		</ul>
+	</div>
+
+<hr>
+
+<div id="centercolumn">
+    <h2>Daily Refresh</h2>
+    <h3>Movement and Mindfullness</h3>
+Mindfulness is awareness that arises through paying attention, on purpose, in the present moment, non-judgementally, in the service of self-understanding and wisdom.
+</div>
+<br>
+<div id="thirdcolumn">   
+	<ul>	
+		<li>Mountain pose</li>
+        <li>Standing forward bend</li>
+        <li>Standing ankle hold</li>		
+		<li>Supine twist</li>
+		<li>High lunge core rotation</li>
+        <li>Superheroes</li>		
+        <li>Warrior I</li>			
+        <li>Warrior II</li>			
+        <li>Warrior IIII</li>
+    </ul>
+</div>
+<br>
+<div id="centercolumn">
+    <h3>Growth Mindset</h3>
+	Individuals who believe their talents can be developed through hard work, good strategies, and input from others, have a growth mindset. 
+    <ul>	
+		<li>Sharpen the saw. Practise existing skills, learn new ones.</li>
+		<li>Seek first to understand, then to be understood.</li>
+        <li>Accept valid criticism as a gift.</li>		
+        <li>Be grateful.</li>		
+        <li>Set goals.</li>
+		<li>Be realistic about timelines.</li>		
+        <li>Value the journey towards the destination.</li>
+		<li>Appreciate your strengths, and work to improve your weaknesses.</li>
+        <li>Acknowledge and embrace imperfection in yourself and others.</li>
+        <li>Respect for self and others.</li>
+		<li>Be willing to make mistakes in front of others.</li>
+        <li>Face your challenges bravely. Shift your perspective to see challenges as an opportunity or adventure.</li>
+        <li>Pay attention to your words and thoughts. Replace negative thoughts with more positive ones.</li>
+        <li>Don't seek approval from others. Cultivate self-acceptance and self-approval.</li>
+        <li>Be authentic.</li>
+        <li>Cultivate a sense of purpose.</li>
+    </ul>
+	
+	<h3>Respect</h3>
+    <ul>
+		<li>The people closest to you deserve your utmost respect.</li>
+        <li>Say thank you.</li>
+        <li>Show up on time.</li>
+        <li>Be nice to strangers.</li>
+        <li>Listen without interupting.</li>
+        <li>Admit when you are wrong.</li>
+        <li>Learn and use people's names.</li>
+        <li>Hold doors open.</li>
+        <li>Don’t criticize, condemn or complain.</li>
+    </ul>
+	
+	<h3>Gratitude</h3>
+    <ul>
+        <li>Think of loved ones.</li>
+        <li>Appreciate abundance of food.</li>
+        <li>Acknowledge the roof over your head.</li>
+        <li>Be aware of creature comforts.</li>
+        <li>Look ahead to the challenges and rewards of the day's work ahead.</li>
+        <li>Tune in to your senses.</li>
+    </ul>
+	
+	<h3>Getting Things Done</h3>
+    <ul>
+        <li>List 3 things to accomplish today.</li>
+	</ul>
+</div>
 
 
-    
-    <div class="topper">
-        
-        <span class="img" style="background-image: url('/assets/e4944k_4svi-buzz-andersen.jpg');">
-        
+<hr>
 
-        
-    </div>
-
-
-
-
-    <article>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-10 col-md-offset-1">
-
-
-                    <p>Landing Page.</p>
-
-<p>… which is shown in the screenshot below:</p>
-
-                </div>
-            </div>
-        </div>
-    </article>
-
-
-    <footer class="site-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <p class="text-muted">This text is footer text. Footer text goes here.</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-
-    <!-- JavaScript -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script src="/js/power.js"></script>
-
-    </body>
-</html>
+<div id="resourcescolumn">
+Resources:
+    <ul>
+        <li>https://www.mindful.org/meditation/mindfulness-getting-started/</li>
+        <li>https://www.franklincovey.com/the-7-habits/</li>
+        <li>https://hbr.org/2016/01/what-having-a-growth-mindset-actually-means</li>
+    </ul>
+	
+</div>
+</body>
+</html> 
